@@ -1,0 +1,19 @@
+// Team grid
+#team-grid {
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  row-gap: calc(#{$pad} * 2);
+
+  article {
+    text-align: center;
+  }
+
+  img {
+    max-width: min(75%, 300px);
+    height: auto;
+    margin: 0 auto 1em;
+    display: block;
+    //box-shadow: 0 0 0 2px #fff, 0 0 0 6px $primary;
+    box-sizing: content-box;
+    border-bottom: 0.75rem solid $secondary;
+  }
+}

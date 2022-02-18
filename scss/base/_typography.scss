@@ -1,0 +1,73 @@
+// Typography
+html {}
+
+body {
+  font-family: $sans-serif, system-ui, -apple-system, sans-serif;
+  line-height: $line-height-base;
+  font-weight: 400;
+  color: $secondary;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  line-height: $line-height-heading;
+}
+
+h1,
+h2 {
+  @include font-size-fluid-px-to-rem(33, 45);
+  color: $primary;
+}
+
+h3 {
+  @include font-size-fluid-px-to-rem(24);
+}
+
+p,
+span,
+a {
+  @include font-size-fluid-px-to-rem(20);
+}
+
+a:not(.btn) {
+  &:link {
+    color: currentColor;
+    text-underline-offset: 0.25em;
+  }
+
+  &:visited {
+    color: inherit;
+  }
+
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
+
+  &:focus {
+    text-decoration-thickness: initial;
+    outline: 0.125em solid currentColor;
+  }
+
+  &:hover {
+    text-decoration-thickness: 0.125em;
+  }
+
+  &:active {
+    color: white;
+    background-color: $primary;
+  }
+}
+
+// Text Styles
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.b-text-transform-uppercase {
+  text-transform: uppercase;
+}

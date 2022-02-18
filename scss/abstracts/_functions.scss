@@ -1,0 +1,13 @@
+// Functions
+
+// Convert rem to px
+//@function rem-to-px($rem) {
+//  $px: ($rem * 16) + px;
+//
+//  @return $px;
+//}
+
+// Strip unit off of number
+//@function strip-unit($number) {
+//  @return $number / ($number * 0 + 1)
+//}

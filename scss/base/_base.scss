@@ -1,0 +1,42 @@
+// Globals
+html,
+body {}
+
+header,
+main,
+footer {}
+
+section,
+article {
+  &.content,
+  & > .content {
+    padding: $pad;
+  }
+}
+
+aside {}
+
+h1, h2, h3 {
+  max-width: 29ch;
+  margin-bottom: calc($pad * 2 / 3);
+}
+
+div {}
+
+.b-heading > p {
+  max-width: 60ch;
+  margin-bottom: calc($pad * 2 / 3);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul, ol {
+  padding-left: 0;
+//  list-style: none;
+}
+
+a {
+  display: inline-block;
+}

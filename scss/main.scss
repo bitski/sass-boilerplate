@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/*!
+main.scss/main.css
+Compiled main Sass/CSS file importing all other used stylesheets.
+Copyright 2021 bitski
+*/
+
+// 1. Vendors
+//@import "vendor/bootstrap/bootstrap";
+
+// 2. Configuration and helpers
+//
+// Abstract settings, helpers or functions.
+// Imported files have no direct output.
+@import "abstracts/variables";
+//@import "abstracts/functions";
+@import "abstracts/mixins";
+
+// 3. Base
+//
+// Global styles used in the project.
+@import "base/reset";
+@import "base/base";
+@import "base/fonts";
+@import "base/typography";
+@import "base/helpers";
+
+// 4. Layout
+//
+// Specific element styles and layout.
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+@import "layout/navigation-legal";
+@import "layout/team-grid";
+@import "layout/cookie-law-info.bar";
+//@import "layout/sidebar";
+//@import "layout/masthead";
+
+// 5. Components
+//
+// All styles relating to a reusable component.
+//@import "components/container";
+//@import "components/strip";
+//@import "components/callout";
+//@import "components/osm";
+@import "components/button";
+@import "components/card";
+@import "components/grid";
+//@import "components/columns";
+//@import "components/carousel";
+//@import "components/input";
+//@import "components/modal";
+//@import "components/accordion";
+//@import "components/dropdown";
+//@import "components/form";
+//@import "components/icon";
+//@import "components/label";
+
+// 6. Pages
+@import "pages/home";
+@import "pages/static";
+
+// 7. Themes
+//
+//@import "themes/themes";

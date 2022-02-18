@@ -1,0 +1,49 @@
+// Footer
+footer#footer {
+  @include font-size-fluid-px-to-rem(16, 20);
+  color: white;
+  background-color: $primary;
+
+  & > div {
+    padding: 0.75rem $pad;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    position: relative;
+    width: 175px;
+    left: -18px;
+  }
+
+  ul {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  li {
+    & + li {
+      margin-left: $pad;
+    }
+  }
+
+  a {
+    &:link {
+      text-decoration-color: $primary;
+    }
+
+    &:focus,
+    &:hover {
+      color: inherit;
+      text-decoration-color: currentColor;
+    }
+
+    &:active {
+      color: $primary;
+      background-color: white;
+    }
+  }
+}

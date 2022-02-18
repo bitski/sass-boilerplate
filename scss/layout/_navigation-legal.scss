@@ -1,0 +1,26 @@
+// Navigation legal
+nav#legal {
+  margin-bottom: 0;
+  padding: calc(#{$pad-base} / 2) 0;
+  @include font-size-fluid-px-to-rem(14);
+  border-top: 1px solid $primary;
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.25em 0;
+
+    .del {
+      font-weight: initial;
+    }
+  }
+
+  a {
+    color: inherit;
+    font-weight: bold;
+  }
+}

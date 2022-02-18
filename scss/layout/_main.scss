@@ -1,0 +1,11 @@
+// Header
+main {
+  & > div {
+    padding-top: calc($pad * 5 / 4);
+    padding-bottom: calc($pad * 5 / 4);
+  }
+
+  .l-section-wrapper {
+    padding: calc($pad * 5 / 4) $pad;
+  }
+}

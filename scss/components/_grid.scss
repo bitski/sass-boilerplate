@@ -1,0 +1,12 @@
+// Grid
+.grid {
+  display: grid;
+  gap: 1em $pad;
+
+  &.auto {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+
+

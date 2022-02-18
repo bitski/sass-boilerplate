@@ -1,0 +1,8 @@
+// Import remainder of required Bootstrap source Sass files.
+//
+// Configuration
+@import "./vendor/twbs/bootstrap/scss/variables";
+@import "./vendor/twbs/bootstrap/scss/mixins";
+
+// Layout & components
+@import "./vendor/twbs/bootstrap/scss/root";

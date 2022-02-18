@@ -1,0 +1,15 @@
+// Button
+.btn {
+  padding: calc($pad / 3 + 1em / 4) $pad calc($pad / 3);
+  color: white;
+  background-color: $primary;
+  text-decoration: none;
+}
+
+//.btn-pseudos {
+//  &:hover,
+//  &:focus,
+//  &:active {
+//    background-color: $secondary;
+//  }
+//}

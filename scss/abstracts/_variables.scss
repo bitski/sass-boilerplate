@@ -1,0 +1,32 @@
+// Variables
+//
+// Color system
+$primary: #ff6600;
+$secondary: #575757;
+$secondary-shade: lighten($secondary, 59%);
+
+// Fonts
+$sans-serif: 'Hind';
+
+// Font Sizing
+$font-size-base: 1rem; // 16px
+$line-height-base: 1.5;
+$line-height-heading: 1.3;
+
+// Colors
+
+// Spacing
+$pad-base: 1rem;
+// $window-width-growth-padding-multiplier: $pad-base / ($breakpoint-xl - 400px)
+$pad: min($pad-base + (100vw - 400px) * 0.02, $pad-base * 2);
+
+// Positioning
+$left-logo: min(-80px + (100vw - 400px) * 0.075, -20px);
+$bottom-logo: calc($pad + 19px * ($line-height-base - 1));
+
+// Breakpoints
+$breakpoint-md: 768px;
+$breakpoint-xl: 1200px;
+
+// Delimiter
+$delimiter-p: ' / ';

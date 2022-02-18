@@ -1,0 +1,49 @@
+// Mixins
+@use "sass:meta";
+
+// Fonts
+@mixin font-face($name, $file, $weight: normal, $style: normal, $display: swap) {
+  @font-face {
+    font-family: "#{$name}";
+    src: url("#{$file}.eot");
+    src: url("#{$file}.eot?#iefix") format("embedded-opentype"),
+    url("#{$file}.woff") format("woff"),
+    url("#{$file}.ttf") format("truetype"),
+    url("#{$file}.svg?#webfont") format("svg");
+    font-weight: $weight;
+    font-style: $style;
+    font-display: $display;
+  }
+}
+
+@mixin font-size-fluid-px-to-rem($size-initial-px, $size-breakpoint-xl-px: null) {
+  $size-initial-rem: $size-initial-px * 1rem / 16;
+  $font-size: $size-initial-rem;
+
+  @if ($size-breakpoint-xl-px != null) {
+    $size-delta-px: $size-breakpoint-xl-px - $size-initial-px;
+    $size-breakpoint-xl-rem: $size-breakpoint-xl-px * 1rem / 16;
+    $font-size: clamp($size-initial-rem, $size-initial-rem + $size-delta-px * (100vw - 400px) / 800, $size-breakpoint-xl-rem);
+  }
+
+  font-size: $font-size;
+}
+
+
+// Flexbox
+
+// Display
+@mixin display-from($value, $breakpoint-from: none, $value-initial: unset) {
+  @if $breakpoint-from == none {
+    display: $value;
+  } @else {
+    @if ($value-initial != unset) {
+      display: $value-initial;
+    }
+    @media screen and (min-width: $breakpoint-from) {
+      display: $value;
+    }
+  }
+}
+
+// Pseudo elements

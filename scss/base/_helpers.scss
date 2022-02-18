@@ -1,0 +1,62 @@
+// Helpers
+
+// Main content containers
+[class*="b-container-"] {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.b-container-xl {
+  max-width: $breakpoint-xl;
+}
+
+// Content sectioning
+
+// Spacing
+.b-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.b-mb-1 {
+  margin-bottom: calc($pad * 2 / 3);
+}
+
+// Columns
+.b-columns-container {
+  @media screen and (min-width: $breakpoint-md) {
+    columns: 2;
+  }
+}
+
+// Text & Color
+.b-text-align-center {
+  text-align: center;
+}
+
+.b-color-primary {
+  color: $primary;
+}
+
+.b-color-secondary {
+  color: $secondary;
+}
+
+.b-background-color-primary {
+  background-color: $primary;
+}
+
+.b-background-color-secondary {
+  background-color: $secondary;
+}
+
+.b-background-color-secondary-shade {
+  background-color: $secondary-shade;
+}
+
+// Images
+.b-img-fluid {
+  max-width: 100%;
+  height: auto;
+}
